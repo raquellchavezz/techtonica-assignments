@@ -79,14 +79,12 @@ link.addEventListener('mouseover', colorChange)
 
 
 //changing color of text 
-
-
 document.body.style.color ="tan";
 
-
-function handleHover(){
+// 
+function clickMe(){
     let element = document.getElementById("element");
     element.innerText = "Hope You Enjoy!";
   }
   
-  element.addEventListener("mouseover", handleHover);
+  element.addEventListener("click", clickMe);
