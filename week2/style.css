@@ -56,3 +56,6 @@ h4{
 .right{
     margin-left:30px;
 }
+.checked{
+    text-decoration:line-through;
+}
