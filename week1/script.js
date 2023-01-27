@@ -88,7 +88,7 @@ function clickMe(){
   }
   
   element.addEventListener("click", clickMe);
-//image resize
+//image resize to small
 let myImg = document.getElementById('myImg');
 function sizeImage(){
     if(myImg&& myImg.style) {
