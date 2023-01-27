@@ -78,6 +78,7 @@ link.addEventListener('mouseover', colorChange)
 
 
 
+//changing color of text 
 
 
-
+document.body.style.color ="tan";
