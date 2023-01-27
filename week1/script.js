@@ -81,10 +81,19 @@ link.addEventListener('mouseover', colorChange)
 //changing color of text 
 document.body.style.color ="tan";
 
-// 
+// when user clicks ingredients --> Hope You Enoy! 
 function clickMe(){
     let element = document.getElementById("element");
     element.innerText = "Hope You Enjoy!";
   }
   
   element.addEventListener("click", clickMe);
+//image resize
+let myImg = document.getElementById('myImg');
+function sizeImage(){
+    if(myImg&& myImg.style) {
+        myImg.style.height = '100px';
+        myImg.style.width = '200px';
+    }    
+}
+myImg.addEventListener("click", sizeImage);
