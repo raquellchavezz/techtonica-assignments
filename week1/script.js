@@ -82,3 +82,11 @@ link.addEventListener('mouseover', colorChange)
 
 
 document.body.style.color ="tan";
+
+
+function handleHover(){
+    let element = document.getElementById("element");
+    element.innerText = "Hope You Enjoy!";
+  }
+  
+  element.addEventListener("mouseover", handleHover);
