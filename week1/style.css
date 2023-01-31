@@ -57,3 +57,22 @@ h4{
     margin-left:30px;
 }
 
+
+.addedImage{ 
+    width:2%
+}
+
+
+@media screen and (max-width:768px) {
+    .addedImage{
+        width:10%
+
+    }
+}
+@media (max-width: 1080px){
+    *{ 
+        background-color: #FCB9AA
+    }
+
+
+}

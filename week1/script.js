@@ -8,20 +8,6 @@ newListItem.textContent = 'non-dairy whip cream';
 document.querySelector('ul').appendChild(newListItem); 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// adding checkmark to element to a list with DOM manipulation: 
-
 //creating a check mark as an element to a list
 const myDiv = document.getElementById("myDiv");
 //creating checkbox element 
@@ -44,20 +30,6 @@ The HTMLLabelElement.htmlFor property reflects the value of the for content prop
   https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/htmlFor
 */
 label.htmlFor = "id"; 
-
-//appending the created text the the created label tag 
-// function tryMe (array){
-//     let items = document.getElementsById("myDiv"); 
-//     for(let i = 0; i <array.length; i++){
-//         let checkboxMe= document.createElement("checkbox"); 
-//         items.innerHTML = array[i]; 
-//         //want to attach the
-
-//     }
-// }
-
-
-
 label.appendChild(
     document.createTextNode("Check me once you have all your ingredients!")); 
 
@@ -79,7 +51,11 @@ link.addEventListener('mouseover', colorChange)
 
 
 //changing color of text 
-document.body.style.color ="tan";
+const stepList = document.getElementById("stepList")
+stepList.addEventListener('mouseover', function handleMouseOver() {
+    stepList.style.color = 'green';
+  });
+
 
 // when user clicks ingredients --> Hope You Enoy! 
 function clickMe(){
@@ -97,3 +73,39 @@ function sizeImage(){
     }    
 }
 myImg.addEventListener("click", sizeImage);
+
+//button 
+const button = document.createElement('button'); 
+button.innerText='Click me!'; 
+
+document.body.appendChild(button); 
+
+
+//ingredients array 
+const arrayMatcha = ["1 tsp matcha powder", "1 tbsp hot water", "1/2 cup oat milk", "1 tsp agave/honey", "non-dairy whip cream"]
+
+const thisDiv= document.getElementById("myDiv"); 
+
+// function matchaCheckBox(array){
+//     for(let i =0; i <array.length; i++){
+//         let checkbox = document.createElement("input");
+//     checkbox.type = "checkbox"; 
+//     checkbox.name = "name"; 
+//     checkbox.value = "value";
+//     checkbox.id = "id"; 
+//     let label = document.createElement("label");
+//     label.htmlFor = "id"
+//     label.appendChild(document.createTextNode(`${array[i]}`));
+//     thisDiv.appendChild(checkbox);
+//     thisDiv.appendChild(label)
+
+//     }
+
+// }
+
+// matchaCheckBox(arrayMatcha)
+
+// //removes old list 
+
+// const oldList = document.querySelector("ul")
+// ul.remove;
