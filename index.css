@@ -40,7 +40,7 @@ font-size: 90px;
  
 
 .hero-text{ /*grabs hero-text class that we created*/
-  margin-left:40px; /*both h1 & p tag will be affected bc in same class*/
+  margin-left:80px; /*both h1 & p tag will be affected bc in same class*/
 }
 /*Notes: 
 - want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
