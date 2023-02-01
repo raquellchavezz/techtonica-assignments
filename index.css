@@ -7,11 +7,18 @@ section { /* anything thats a section this styling will apply*/
 .hero { 
   background-color:#c0b8b8;       /* overides background color to change to another color*/
   height: 100vh; /*100% of viewport height*/
-  font-size: 400px;
+  font-size: 40px;
   color: white; 
 }
 
 footer { 
   height: 500px; 
   background-color: black;
+}
+
+nav{ 
+  display: flex; /*makes appear in line instead of stacked meaning:  inline element does not start on a new line and it only takes up as much width as necessary.*/
+}
+ul{ 
+  display: flex; 
 }
