@@ -7,6 +7,8 @@ section { /* anything thats a section this styling will apply*/
 .hero { 
   background-color:#c0b8b8;       /* overides background color to change to another color*/
   height: 100vh; /*100% of viewport height*/
+  font-size: 400px;
+  color: white; 
 }
 
 footer { 
