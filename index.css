@@ -22,3 +22,7 @@ nav{
 ul{ 
   display: flex; 
 }
+li{ 
+  width: 200px; 
+  
+}
