@@ -38,10 +38,24 @@ h1{ /*grabbing h1 tag to change size of font for any h1 tag, this is where my he
 font-size: 90px;
 }
  
+
+.hero-text{ /*grabs hero-text class that we created*/
+  margin-left:40px; /*both h1 & p tag will be affected bc in same class*/
+}
 /*Notes: 
 - want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
 - do this with justify content space between on nav bar  as the unordered list and div where the logo lives inside
 -  all available space is placed between the first and last items, pushing both items to opposite edges of the container.
 source: https://stackoverflow.com/questions/42080123/controlling-the-amount-of-space-in-justify-content-space-between 
 - use the inspect on chrome dev tools to check out the elements we have created so far. You can inspect the page & the elements 
+- want spacing for h1 tag and description (software eng oin training) we can create div and put both inside to change the spacing all at once
+
+
+
+
+
+
+
+
+
 */
