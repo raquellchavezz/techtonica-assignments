@@ -1,3 +1,8 @@
+body{ /*will apply to anything in the body*/
+  font-family: 'Poppins', sans-serif; /*sans-serif is a backup*/
+
+}
+
 section { /* anything thats a section this styling will apply*/
   height: 500px;
   background-color: white;
