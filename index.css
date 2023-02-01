@@ -18,15 +18,18 @@ footer {
 
 nav{ 
   display: flex; /*makes appear in line instead of stacked meaning:  inline element does not start on a new line and it only takes up as much width as necessary.*/
-  justify-content: space-between; /*this tells your nav bar (about me, projets, contact me to stay on the right side fo the page and create space between)*/
+  justify-content: space-between; /*this tells your nav bar (about me, projets, contact me to stay on the right side fo the page and create space between) */
  
 }
 ul{ 
   display: flex; 
   list-style-type: none; 
+  width: 500px;
+  font-size:30px; /*changes font size to 30 for whatever is inside out unordered list*/
+  justify-content: space-around; /*this gives you the same space around each element within the list so same space around about me, porjects, and contact me*/
 }
 li{ 
-  width: 200px; 
+  /* width: 200px; could use this to give width to each list item */
   text-decoration: none; /*gets rid of the underline that comes with a link*/
 
 }
