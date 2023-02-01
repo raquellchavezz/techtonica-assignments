@@ -18,21 +18,23 @@ footer {
 
 nav{ 
   display: flex; /*makes appear in line instead of stacked meaning:  inline element does not start on a new line and it only takes up as much width as necessary.*/
-  justify-content: space-between;
+  justify-content: space-between; /*this tells your nav bar (about me, projets, contact me to stay on the right side fo the page and create space between)*/
  
 }
 ul{ 
   display: flex; 
+  list-style-type: none; 
 }
 li{ 
   width: 200px; 
+  text-decoration: none; /*gets rid of the underline that comes with a link*/
 
 }
  
 /*Notes: 
 - want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
 - do this with justify content space between on nav bar  as the unordered list and div where the logo lives inside
-
-
+-  all available space is placed between the first and last items, pushing both items to opposite edges of the container.
+source: https://stackoverflow.com/questions/42080123/controlling-the-amount-of-space-in-justify-content-space-between 
 
 */
