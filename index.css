@@ -41,6 +41,10 @@ li{
 
 h1{ /*grabbing h1 tag to change size of font for any h1 tag, this is where my header with Raquel Chavez text is  */ 
 font-size: 90px;
+margin:0; 
+}
+p{ 
+  margin:0;
 }
  
 
