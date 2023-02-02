@@ -4,7 +4,7 @@ body{ /*will apply to anything in the body*/
 }
 
 section { /* anything thats a section this styling will apply*/
-  height: 500px;
+ 
   background-color: white;
   border: solid black 1px; 
 }
@@ -42,6 +42,12 @@ li {
 h1 { /*grabbing h1 tag to change size of font for any h1 tag, this is where my header with Raquel Chavez text is  */ 
 font-size: 90px;
 margin:0; 
+  }
+
+h2 { 
+  font-size: 50px;
+
+  
   }
 
 p { 
@@ -96,6 +102,25 @@ p {
 .socialImg{ 
   margin:15px; 
 }
+
+.sub-section { 
+  display: flex; 
+  justify-content: space-around;
+  padding: 80px; 
+}
+
+.headshot { 
+  width:300px;
+  border-radius:150px; 
+}
+
+.headshot-container {
+  display: flex; 
+  align-items: center;
+
+}
+
+
 /*Notes: 
 - want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
 - do this with justify content space between on nav bar  as the unordered list and div where the logo lives inside
