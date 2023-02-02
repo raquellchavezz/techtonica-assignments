@@ -109,6 +109,13 @@ p {
   padding: 80px; 
 }
 
+.sub-section-alt{
+   display: flex; 
+   flex-direction: column;
+   text-align: center; 
+  
+}
+
 .headshot { 
   width:300px;
   border-radius:150px; 
@@ -119,6 +126,18 @@ p {
   align-items: center;
 
 }
+.project-card { 
+  width: 300px; 
+  height: 500px; 
+  border: 1px solid black;  
+
+}
+
+.project-container { 
+  display: flex; 
+  justify-content: space-around; 
+}
+
 
 
 /*Notes: 
