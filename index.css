@@ -60,18 +60,27 @@ p {
 
 .hero-text { /*grabs hero-text class that we created*/
   margin-left:80px; /*both h1 & p tag will be affected bc in same class*/
+  margin-bottom: 200px;
 }
 
 .button { 
   width: 200px; 
   height: 55px; 
   border-radius: 30px; /*want border radius to be half of height*/
-  background-color:coral;
+  background-color:#906e5c;
   text-align: center;
   font-weight:300;
   font-size: 30px;
   padding-top: 5px; 
   margin-top: 20px;
+}
+.button:hover{
+  background-color:#c59d87;
+  
+}
+.button:active{ 
+  background-color: #F1F1F1; 
+  color:#DDC1BD; 
 }
 
 
