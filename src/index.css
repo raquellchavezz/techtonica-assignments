@@ -53,9 +53,9 @@ p {
 
 .hero-area { 
   display: flex; /*want to make it flexible based on whatever height browser in*/
-  flex-direction: column; /* "Choose column or column-reverse and your main axis will run from the top of the page to the bottom — in the block direction." source: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox*/
   height:100%; /*100% of whatever parent div its in*/
-  justify-content: center; /*anything in hero-area we will center*/
+  justify-content: space-between; /*anything in hero-area we will center*/
+  align-items: center;
 }
 
 .hero-text { /*grabs hero-text class that we created*/
@@ -78,10 +78,15 @@ p {
   background-color:#c59d87;
   
 }
-.button:active{ 
-  background-color: #F1F1F1; 
+.button:active{ /*triggers when the user clicks the mouse. The state of active will be the same until the user holds down the mouse*/
+  background-color: #F1F1F1; /*source: https://www.geeksforgeeks.org/difference-between-focus-and-active-selector/*/
   color:#DDC1BD; 
 }
+
+.socials { 
+  padding-bottom:200px; 
+}
+
 
 
 /*Notes: 
