@@ -50,7 +50,13 @@ p {
   font-size: 30px;
  
 }
- 
+
+.hero-area { 
+  display: flex; /*want to make it flexible based on whatever height browser in*/
+  flex-direction: column; /* "Choose column or column-reverse and your main axis will run from the top of the page to the bottom — in the block direction." source: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox*/
+  height:100%; /*100% of whatever parent div its in*/
+  justify-content: center; /*anything in hero-area we will center*/
+}
 
 .hero-text { /*grabs hero-text class that we created*/
   margin-left:80px; /*both h1 & p tag will be affected bc in same class*/
@@ -58,13 +64,14 @@ p {
 
 .button { 
   width: 200px; 
-  height: 60px; 
+  height: 55px; 
   border-radius: 30px; /*want border radius to be half of height*/
   background-color:coral;
   text-align: center;
   font-weight:300;
   font-size: 30px;
   padding-top: 5px; 
+  margin-top: 20px;
 }
 
 
