@@ -33,31 +33,38 @@ ul{
   font-size:30px; /*changes font size to 30 for whatever is inside out unordered list*/
   justify-content: space-around; /*this gives you the same space around each element within the list so same space around about me, porjects, and contact me*/
 }
-li{ 
+li { 
   /* width: 200px; could use this to give width to each list item */
   text-decoration: none; /*gets rid of the underline that comes with a link*/
 
 }
 
-h1{ /*grabbing h1 tag to change size of font for any h1 tag, this is where my header with Raquel Chavez text is  */ 
+h1 { /*grabbing h1 tag to change size of font for any h1 tag, this is where my header with Raquel Chavez text is  */ 
 font-size: 90px;
 margin:0; 
-}
-p{ 
+  }
+
+p { 
   margin:0;
+  font-weight: 300;
+  font-size: 30px;
+ 
 }
  
 
-.hero-text{ /*grabs hero-text class that we created*/
+.hero-text { /*grabs hero-text class that we created*/
   margin-left:80px; /*both h1 & p tag will be affected bc in same class*/
 }
 
-.button{ 
+.button { 
   width: 200px; 
   height: 60px; 
   border-radius: 30px; /*want border radius to be half of height*/
   background-color:coral;
   text-align: center;
+  font-weight:300;
+  font-size: 30px;
+  padding-top: 5px; 
 }
 
 
