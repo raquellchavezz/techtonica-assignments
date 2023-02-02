@@ -93,8 +93,9 @@ p {
 
 }
 
-
-
+.socialImg{ 
+  margin:15px; 
+}
 /*Notes: 
 - want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
 - do this with justify content space between on nav bar  as the unordered list and div where the logo lives inside
