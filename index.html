@@ -24,7 +24,7 @@
         <div class = "hero-area"> <!--hero text section will always be in center of div which is outside of the nav-->
             <div class = "hero-text">
                 <h1> Raquel Chavez</h1> <!--adds header with my name-->
-                <p> Software Engineer in training @ Techtonica </p> <!--adds small description of me-->
+                <p> Software Engineer in training @ Techtonica  👩🏽‍💻</p> <!--adds small description of me-->
                 <div class ="button"> About me </div> <!--creating a div for button so we can style it ourselves later on, doing button tag it will come with default styling-->
             </div>
             <div class ="socials">
@@ -82,7 +82,33 @@
             </div>
         </div>
     </section> 
-    <footer> </footer> <!--footer-->
+    <footer id ="contact-me">  <!--footer, semantic tag-->
+        <h2>Contact me 📧 </h2>
+            <div>
+                <p id = "para">⚠️
+                    please note all fields are required ⚠️</p>
+            </div>
+        
+        <!-- <form >
+            
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form>  -->
+
+          <form id="form">
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+                <input type="text" name="name" required placeholder="First and last name">
+                <input type="email" name="email" placeholder ="Email address "required>
+                <button type="submit" id="submit">Submit</button>
+           </form>
+    
+
+
+
+    </footer>
 
 
     <script src ="src/script2.js"></script>

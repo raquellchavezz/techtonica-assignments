@@ -18,10 +18,15 @@ section { /* anything thats a section this styling will apply*/
 }
 
 footer { 
-  height: 300px; 
   background-color:#ebd6bac9;
+  padding: 80px; 
 
 }
+#para{ 
+  font-size:16px ;
+  color: #881d1d; 
+}
+
 
 nav{ 
   display: flex; /*makes appear in line instead of stacked meaning:  inline element does not start on a new line and it only takes up as much width as necessary.*/
