@@ -5,8 +5,9 @@ body{ /*will apply to anything in the body*/
 
 section { /* anything thats a section this styling will apply*/
  
-  background-color: white;
+  background-color:white;
   border: solid black 1px; 
+  
 }
 
 .hero { 
@@ -17,8 +18,9 @@ section { /* anything thats a section this styling will apply*/
 }
 
 footer { 
-  height: 500px; 
-  background-color: black;
+  height: 300px; 
+  background-color:#ebd6bac9;
+
 }
 
 nav{ 
@@ -46,11 +48,9 @@ margin:0;
 
 h2 { 
   font-size: 50px;
-
-  
   }
-.subtext{ 
-  align-items: center;
+
+.sub-text{ 
   font-size: 15px;
   font-weight: 300;
 }
@@ -112,6 +112,7 @@ p {
   display: flex; 
   justify-content: space-around;
   padding: 80px; 
+  background-color:white; 
 }
 
 .sub-section-alt{
@@ -144,11 +145,23 @@ p {
   display: flex; 
   justify-content: space-around; 
 }
+@media only screen and (max-width: 1080px) {
+  .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #FFDFD3;
+  }
+}
 
 .proj-img {
   margin-top: 25px;
   width:250px; 
   border-radius: 120px;
+ }
+
+ hr{ 
+  margin-left: 20px; 
+  margin-right:20px;
  }
 
 /*Notes: 
