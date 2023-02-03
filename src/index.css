@@ -49,6 +49,11 @@ h2 {
 
   
   }
+.subtext{ 
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+}
 
 p { 
   margin:0;
@@ -130,7 +135,8 @@ p {
 .project-card { 
   width: 300px; 
   height: 500px; 
-  box-shadow: 5px 5px 20px #d9a96ac9   ;   
+  box-shadow: 5px 5px 20px #d9a96ac9;
+  margin:10px;   
 
 }
 
@@ -139,7 +145,11 @@ p {
   justify-content: space-around; 
 }
 
-
+.proj-img {
+  margin-top: 25px;
+  width:250px; 
+  border-radius: 120px;
+ }
 
 /*Notes: 
 - want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
