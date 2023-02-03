@@ -1,0 +1,188 @@
+body{ /*will apply to anything in the body*/
+  font-family: 'Poppins', sans-serif; /*sans-serif is a backup*/
+
+}
+
+section { /* anything thats a section this styling will apply*/
+ 
+  background-color:white;
+  border: solid black 1px; 
+  
+}
+
+.hero { 
+  background-color:#c0b8b8;       /* overides background color to change to another color*/
+  height: 100vh; /*100% of viewport height*/
+  font-size: 40px;
+  color: white; 
+}
+
+footer { 
+  background-color:#ebd6bac9;
+  padding: 80px; 
+
+}
+#para{ 
+  font-size:16px ;
+  color: #881d1d; 
+}
+
+
+nav{ 
+  display: flex; /*makes appear in line instead of stacked meaning:  inline element does not start on a new line and it only takes up as much width as necessary.*/
+  justify-content: space-between; /*this tells your nav bar (about me, projets, contact me to stay on the right side fo the page and create space between) */
+ 
+}
+ul{ 
+  display: flex; 
+  list-style-type: none; 
+  width: 500px;
+  font-size:30px; /*changes font size to 30 for whatever is inside out unordered list*/
+  justify-content: space-around; /*this gives you the same space around each element within the list so same space around about me, porjects, and contact me*/
+}
+li { 
+  /* width: 200px; could use this to give width to each list item */
+  text-decoration: none; /*gets rid of the underline that comes with a link*/
+
+}
+
+h1 { /*grabbing h1 tag to change size of font for any h1 tag, this is where my header with Raquel Chavez text is  */ 
+font-size: 90px;
+margin:0; 
+  }
+
+h2 { 
+  font-size: 50px;
+  }
+
+.sub-text{ 
+  font-size: 15px;
+  font-weight: 300;
+}
+
+p { 
+  margin:0;
+  font-weight: 300;
+  font-size: 30px;
+ 
+}
+
+.hero-area { 
+  display: flex; /*want to make it flexible based on whatever height browser in*/
+  height:100%; /*100% of whatever parent div its in*/
+  justify-content: space-between; /*anything in hero-area we will center*/
+  align-items: center;
+}
+
+.hero-text { /*grabs hero-text class that we created*/
+  margin-left:80px; /*both h1 & p tag will be affected bc in same class*/
+  margin-bottom: 200px;
+}
+
+.button { 
+  width: 200px; 
+  height: 55px; 
+  border-radius: 30px; /*want border radius to be half of height*/
+  background-color:#906e5c;
+  text-align: center;
+  font-weight:300;
+  font-size: 30px;
+  padding-top: 5px; 
+  margin-top: 20px;
+}
+.button:hover{
+  background-color:#c59d87;
+  
+}
+.button:active{ /*triggers when the user clicks the mouse. The state of active will be the same until the user holds down the mouse*/
+  background-color: #F1F1F1; /*source: https://www.geeksforgeeks.org/difference-between-focus-and-active-selector/*/
+  color:#DDC1BD; 
+}
+
+.socials { 
+  padding-bottom:200px; 
+}
+
+.logo {
+  height: 100px; 
+  margin:30px;  
+
+}
+
+.socialImg{ 
+  margin:15px; 
+}
+
+.sub-section { 
+  display: flex; 
+  justify-content: space-around;
+  padding: 80px; 
+  background-color:white; 
+}
+
+.sub-section-alt{
+   display: flex; 
+   flex-direction: column;
+   text-align: center;
+   padding: 80px;  
+  
+}
+
+.headshot { 
+  width:300px;
+  border-radius:150px; 
+}
+
+.headshot-container {
+  display: flex; 
+  align-items: center;
+
+}
+.project-card { 
+  width: 300px; 
+  height: 500px; 
+  box-shadow: 5px 5px 20px #d9a96ac9;
+  margin:10px;   
+
+}
+
+.project-container { 
+  display: flex; 
+  justify-content: space-around; 
+}
+@media only screen and (max-width: 1080px) {
+  .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #FFDFD3;
+  }
+}
+
+.proj-img {
+  margin-top: 25px;
+  width:250px; 
+  border-radius: 120px;
+ }
+
+ hr{ 
+  margin-left: 20px; 
+  margin-right:20px;
+ }
+
+/*Notes: 
+- want my logo to always be on the left and mu about me, projects and contact me (aka the unordered list ul tag) to be on the right
+- do this with justify content space between on nav bar  as the unordered list and div where the logo lives inside
+-  all available space is placed between the first and last items, pushing both items to opposite edges of the container.
+source: https://stackoverflow.com/questions/42080123/controlling-the-amount-of-space-in-justify-content-space-between 
+- use the inspect on chrome dev tools to check out the elements we have created so far. You can inspect the page & the elements 
+- want spacing for h1 tag and description (software eng oin training) we can create div and put both inside to change the spacing all at once
+
+
+
+
+
+
+
+
+
+*/
