@@ -2,15 +2,15 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
+<head class ="titleArea"> 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Latte Recipe</title>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title >Latte Recipe</title>
   <link href="style.css" rel="stylesheet" type="text/css" /> <!--connecting style sheet-->
 </head>
 
 <body>
-  <div class=”top”>
+  <div id = "element" class=”top”>
     <h2 class = "title"> Yummy Matcha Latte 🍵🐸🌱🌿 </h2>  
       <p class="description">
         Matcha is a type of green tea that comes in a powder form, has an earthy taste, and provides you with great health benefits! For example, matcha can help with focus, stress, and sleep! 
@@ -19,16 +19,16 @@
 
   <div class = "left">
   <div class = "imgIngred">
-      <img src="images/matcha.jpeg"   alt="matcha tea close up"
+      <img src="images/matcha.jpeg" id  ="myImg"  alt="matcha tea close up"
       width=600px /> <!--go inside folder and find this image-->
       <p class = "source"> 
-       Photo Credit: <a href="https://www.justonecookbook.com/green-tea-latte/"> Just One CookBook</a>
+       Photo Credit: <a href="https://www.justonecookbook.com/green-tea-latte/" id="photoLink"> Just One CookBook</a>
       </p>
   </div>
 
-    <div>
+    <div id = "thisDiv">
       <h3> Ingredients</h3>
-        <ul>
+        <ul id ="myDiv">
           <li>1 tsp matcha powder </li>
           <li> 1 tbsp hot water </li>
           <li>1/2 cup oat milk</li>
@@ -38,13 +38,14 @@
   </div>
 
   <div class="steps">
+    <img src="images/Make-Matcha-Tea-Latte.jpg" id  ="stepsImg"  alt="steps of making matcha latte"
+      width=300px />
 
-  <div class="right"> 
+  <div id ="stepList" class="right"> 
       <div class = "steps">
         <h3>Steps</h3>
           <ol>
             <li>Put the matcha powder in a mug or small bowl</li>
-
             <li>Add in the hot water </li>
             <li>Whisk the matcha until there are no lumps (use an M shape motion when whisking.)</li>
             <li>Add in the oat milk and stir to mix the matcha and oat milk together. You could also use a frother for this step.</li>
@@ -54,15 +55,20 @@
 
     <div class = "links">
       <h4> Check out these similar recipes!</h4>
+      <img src="images/pumpkin-matcha.jpeg" id  ="pumpkin-matcha"  class = "addedImage"alt="pumpkin matcha latte image"
+      width=50px />
         <a href = "https://minimalistbaker.com/pumpkin-spice-matcha-latte-4-ingredients/" > Link to Pumpkin Spice Matcha Latte </a>
           </br>
-          </br>
+      <img src="images/chai-matcha.webp" id  ="chai-matcha"  class = "addedImage" alt="chai matcha latte ingredients image"
+          width=50px />
         <a href = "https://thehealthfulideas.com/iced-matcha-chai-latte/" > Link to Iced Chai Matcha Latte</a>
     </div>
 
   </div> 
+
+
+  <script src="script.js"> </script> 
  
 </body>
 
 </html>
- 
