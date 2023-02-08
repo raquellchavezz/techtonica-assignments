@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first game project </title>
+    <link rel ="stylesheet" href = "styles.css"> 
+
 </head>
 <body>
-    <div id = "container"> 
-        <h1> 🎲 Roll the Dice game 🎲 </h1> <!--creating the title-->
+    <div class = "container"> 
+        <h1> 🎲 Roll the Dice Game 🎲 </h1> <!--creating the title-->
+        <div class = "dice"> <!--in its own div-->
+            <p id ="player1"> player 1 </p>
+            <img class = "img1" src = "images/dice6.png">
+        </div>
 
+        <div class = "dice"> <!--in its own div-->
+            <p id = "player2"> player 2 </p>
+            <img class= "img2" src="images/dice6.png">
+        </div>
     </div>
-
+    <div class="buttons"> 
+        <button id= "diceRollButton" type="button">Roll the Dice</button>
+        <button id="resetButtton" type="button">Reset</button>
+    </div>
     
+    
+
+
+
+
+
 </body>
 </html>
