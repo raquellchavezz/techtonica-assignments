@@ -13,17 +13,18 @@
         <h1> 🎲 Roll the Dice Game 🎲 </h1> <!--creating the title-->
         <div class = "dice"> <!--in its own div-->
             <p id ="player1"> player 1 </p>
-            <img class = "img1" src = "images/dice6.png">
+            <img class = "img" id = "img1" src = "images/dice6.png">
         </div>
 
         <div class = "dice"> <!--in its own div-->
             <p id = "player2"> player 2 </p>
-            <img class= "img2" src="images/dice6.png">
+            <img class= "img" id="img2" src="images/dice6.png">
         </div>
     </div>
     <div class="buttons"> 
-        <button id= "diceRollButton" type="button">Roll the Dice</button>
+        <button id= "diceRollButton" type="button" onclick= "changeImg()">Roll the Dice</button>
         <button id="resetButtton" type="button">Reset</button>
+
     </div>
     
     
