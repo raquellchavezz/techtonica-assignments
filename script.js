@@ -46,8 +46,12 @@ function resetImage(){
     let image1= document.querySelectorAll("img")[0];
     let reset = "images/dice6.png"
     image1.setAttribute("src", reset );
+    
+    let image2= document.querySelectorAll("img")[1];
+    let reset2 = "images/dice6.png"
+    image2.setAttribute("src", reset2 );
 
-
+   
 }
 
 //do the same thing for the second image 
