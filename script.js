@@ -16,18 +16,25 @@
 // */
 //testing to see if page works 
 
-let randomNumber1 = Math.floor(Math.random()*6 +1); //generates number from 0 and 0.99999
-// creates a random decimal number between 0 and 1. The returned value may be 0, but it will never be 1
-console.log(randomNumber1); 
+// let randomNumber1 = Math.floor(Math.random()*6 +1); //generates number from 0 and 0.99999
+// // creates a random decimal number between 0 and 1. The returned value may be 0, but it will never be 1
+// console.log(randomNumber1); 
 // // will give us numbers  0-6 so we need to add 1
 // // 0+1 = 1, 1+1= 2, 2+1= 3, etc
 // // // place this image inside the left <img> element
 // // // I want to randomly change the image using the randomNumber1 variable
 // // // when user clicks on the button roll the dice 
-let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
-let image1= document.querySelectorAll("img")[0];
-image1.setAttribute("src", randomDiceImgSrc);
+// let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
+// let image1= document.querySelectorAll("img")[0];
+// image1.setAttribute("src", randomDiceImgSrc);
+function changeImage1(){
+    let randomNumber1 = Math.floor(Math.random()*6 +1);
+    let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
+    let image1= document.querySelectorAll("img")[0];
+    image1.setAttribute("src", randomDiceImgSrc);
 
+}
+changeImage1(); 
 
 
 
