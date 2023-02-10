@@ -27,14 +27,27 @@
 // let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
 // let image1= document.querySelectorAll("img")[0];
 // image1.setAttribute("src", randomDiceImgSrc);
-function changeImage1(){
+function changeImage(){
     let randomNumber1 = Math.floor(Math.random()*6 +1);
     let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
     let image1= document.querySelectorAll("img")[0];
     image1.setAttribute("src", randomDiceImgSrc);
+    
+    let randomNumber2 = Math.floor(Math.random()*6 +1);
+    let randomDiceImgSrc2 = "images/dice" +randomNumber2 + ".png"; 
+    let image2 = document.querySelectorAll("img")[1]
+    image2.setAttribute("src", randomDiceImgSrc2); 
 
 }
-changeImage1(); 
+changeImage(); 
+
+//do the same thing for the second image 
+// function changeImage2(){
+//     let randomNumber2 = Math.floor(Math.random()*6 +1)
+//     let randomDiceImgSrc2 = "images/dice" +randomNumber2 + ".png"; 
+//     let image2 = document.querySelectorAll["img"][1]
+//     image2.setAttribute("src", randomDiceImgSrc);
+// }
 
 
 
