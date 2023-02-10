@@ -41,6 +41,15 @@ function changeImage(){
 }
 changeImage(); 
 
+function resetImage(){
+    //want to reseet the image back to showing 6 sides of the dice 
+    let image1= document.querySelectorAll("img")[0];
+    let reset = "images/dice6.png"
+    image1.setAttribute("src", reset );
+
+
+}
+
 //do the same thing for the second image 
 // function changeImage2(){
 //     let randomNumber2 = Math.floor(Math.random()*6 +1)
