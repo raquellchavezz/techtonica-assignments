@@ -1,5 +1,142 @@
 
 
+// let header = document.getElementById("h1"); 
+
+// function changeStuff(){ 
+//     changeImage(); 
+//     changeTitle();
+// }
+
+
+
+
+function changeImage(){
+    let randomNumber1 = Math.floor(Math.random()*6 +1);
+    let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
+    let image1= document.getElementById("img1");
+    image1.setAttribute("src", randomDiceImgSrc);
+    
+    let randomNumber2 = Math.floor(Math.random()*6 +1);
+    let randomDiceImgSrc2 = "images/dice" +randomNumber2 + ".png"; 
+    // let image2 = document.querySelectorAll("img")[1]
+    let image2 = document.getElementById("img2");
+
+    image2.setAttribute("src", randomDiceImgSrc2); 
+
+
+    const title = document.querySelector("h1");
+        if (randomNumber1>randomNumber2){
+            title.innerHTML = "Player1 wins!🏆";
+        }else if (randomNumber2>randomNumber1) {
+            title.innerHTML = "Player2 wins!🏆";
+        } else{
+            title.innerHTML= "It's a tie!🤝🏽"
+    
+        }
+
+
+
+
+}
+// changeImage(); 
+
+function resetImage(){
+    //want to reseet the image back to showing 6 sides of the dice 
+    let image1= document.querySelectorAll("img")[0];
+    let reset = "images/dice6.png"
+    image1.setAttribute("src", reset );
+
+    let image2= document.querySelectorAll("img")[1];
+    let reset2 = "images/dice6.png"
+    image2.setAttribute("src", reset2 );
+}
+
+//setting conditions if player1 wins
+//   const title = document.querySelector("h1"); 
+//   diceRollButton.addEventlistener ("click", changeTitle)
+//     let randomNumber1 = Math.floor(Math.random()*6 +1);
+//     let randomNumber2 = Math.floor(Math.random()*6 +1);
+//   function changeTitle(){ 
+//     if (randomNumber1>randomNumber2){
+//         title.innerHTML = "Player1 wins!";
+//     }else if (randomNumber2>randomNumber1) {
+//         title.innerHTML = "Player2 wins!";
+//     } else{
+//         title.innerHTML= "It's a tie!"
+
+//     }
+//   }
+
+
+
+
+
+
+
+// let h1 = document.querySelector("h1"); //grabbing the h1 element 
+
+
+// function changeTitle(){ 
+//     let randomNumber1 = Math.floor(Math.random()*6 +1);
+//     let randomNumber2 = Math.floor(Math.random()*6 +1);
+//     let h1 = document.querySelector("h1"); 
+//     if (randomNumber1>randomNumber2){ 
+//         h1.innerHTML = "Player1 wins!";
+//      }else if (randomNumber2>randomNumber2) {
+//         h1.innerHTML = "Player2 wins!";
+//     }else{
+
+//     }
+// }
+
+
+// h1.addEventListener('click', function(){ 
+
+
+
+
+
+//attempt1:
+// let randomNumber1 = Math.floor(Math.random()*6 +1);
+// let randomNumber2 = Math.floor(Math.random()*6 +1);
+// if (randomNumber1>randomNumber2){ 
+//     document.querySelector("h1").innerHTML = "Player1 wins!";
+// }else {
+//     document.querySelector("h1").innerHTML = "Player2 wins!";
+
+// } //why can't we do document.getElementsByID("title")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//my notes/thoughts: 
 // if (typeof window !== 'undefined') {
 //     console.log('You are on the browser')
 //     // 👉️ can use alert()
@@ -27,32 +164,9 @@
 // let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
 // let image1= document.querySelectorAll("img")[0];
 // image1.setAttribute("src", randomDiceImgSrc);
-function changeImage(){
-    let randomNumber1 = Math.floor(Math.random()*6 +1);
-    let randomDiceImgSrc = "images/dice" + randomNumber1 + ".png";
-    let image1= document.querySelectorAll("img")[0];
-    image1.setAttribute("src", randomDiceImgSrc);
-    
-    let randomNumber2 = Math.floor(Math.random()*6 +1);
-    let randomDiceImgSrc2 = "images/dice" +randomNumber2 + ".png"; 
-    let image2 = document.querySelectorAll("img")[1]
-    image2.setAttribute("src", randomDiceImgSrc2); 
 
-}
-changeImage(); 
 
-function resetImage(){
-    //want to reseet the image back to showing 6 sides of the dice 
-    let image1= document.querySelectorAll("img")[0];
-    let reset = "images/dice6.png"
-    image1.setAttribute("src", reset );
-    
-    let image2= document.querySelectorAll("img")[1];
-    let reset2 = "images/dice6.png"
-    image2.setAttribute("src", reset2 );
 
-   
-}
 
 //do the same thing for the second image 
 // function changeImage2(){
