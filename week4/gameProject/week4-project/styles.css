@@ -1,0 +1,59 @@
+*{ 
+  background-color: #eee3e5; 
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .dice{ 
+    display: inline-block;
+  }
+#player1 { 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  
+}
+
+#player2 { 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+}
+
+
+.buttons{ 
+ text-align: center;
+ margin-top: 80px;
+ font-size: 80px;
+ font-family: cursive;
+}
+
+#diceRollButton { 
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+
+#resetButtton {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+  background-color: rgba(105, 136, 240, 0.558);
+  border-radius: 10px;
+}
+
+
+img{ 
+  width: 70%;
+}
