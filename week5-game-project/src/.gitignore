@@ -1,3 +1,2 @@
-/node_modules
-node_modules 
+node_modules
 # git ignores this directory when we are checking this in 
