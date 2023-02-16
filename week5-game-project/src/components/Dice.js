@@ -26,26 +26,13 @@ export default function Dice(props) {
             }
     }
 
-
-
     return (
       <>
       <div className="dice">
         <p id="player"> {props.player}</p>
-        <button className="diceRollButton" onClick ={changeImage}> Roll the dice </button>
         <img src="/images/dice1.png" alt="dice" />   {/* we dont need () or have the function as a string*/}
         {/* anytime ref variable or func we will need {} in jsx return*/}
       </div>
-  {/* 
-  
-      <div class="buttons"> 
-          <button id= "diceRollButton" type="button" onclick=changeImage() >Roll the Dice</button>
-          <button id="resetButtton" type="button" onclick =  resetImage()>Reset</button>
-  
-      </div> */}
-
-
-
       </>
     );
   }
