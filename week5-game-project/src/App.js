@@ -5,20 +5,44 @@
 import React from "react";
 import "./styles.css";
 import Dice from "./components/Dice.js"; //in dice.js making the component but wont be used until imported and initialized
-import { useState } from 'react'
+import { useState } from 'react'; // use for 2 diff variables that in charge of hcih files images pointing to/ 
 //method1: 
 export default function App() {
-  const player = "Player 1 ";
+  const player1 = "Player 1 ";
+  const player2 = "Player 2 ";
   const image = "../images/dice1.png";
-  return (
+  const [dieRoll1,setDieRoll1] = useState(1); //holds current image based on whatevere they rolled
+  const [dieRoll2,setDieRoll2] = useState(1); //inital die roll, starting values 
+  //setImage1 to change the state or the value of image1
+  //instead image1 = you do setImage1(the value)
+  //useState tells it this will be a stateVariable and value passed is default
+
+  const changeImage = () => { //when button clicked this func will be triggered
+    let randomNumber1 = Math.floor(Math.random()*6 +1);
+    // let randomDiceImgSrc = "../images/dice" + randomNumber1 + ".png";
+    // let image1= document.getElementById("img1");
+    // image1.setAttribute("src", randomDiceImgSrc);
+    setImage1(randomDiceImgSrc) //img1 will get set to this random img
+    
+    //doing the same for image 2
+    let randomNumber2 = Math.floor(Math.random()*6 +1);
+    // let randomDiceImgSrc2 = "../images/dice" +randomNumber2 + ".png"; 
+    setImage2(randomDiceImgSrc2) 
+    // let image2 = document.querySelectorAll("img")[1]
+    // let image2 = document.getElementById("img2");
+    // image2.setAttribute("src", randomDiceImgSrc2); 
+  }
+
+  return ( //children
     <>
     <div className="App">
         <center>
             <h1>TITLE</h1>
         </center>
-      <Dice player={player} image={image} />  {/* initializing- putting the component on the page*/}
-      <Dice player={"player 2"} image={image} />
-      <button className="diceRollButton"> Roll the dice </button>
+      <Dice player={player1} face={1} />  {/* initializing- putting the component on the page*/}
+      <Dice player={player2} face={1} /> 
+      {/* using state variables now ^ anytime image */}
+      <button className="diceRollButton" onClick ={changeImage}> Roll the dice </button>
 {/* onClick ={changeImage} */}
     </div>
     
@@ -26,7 +50,6 @@ export default function App() {
     
   );
 }
-
 
 //canput both imgs in dice component- may be confusing want to keep components simple
 //could seperate so the button is just in app.js so controlled thru there & have new component thats just these images 
