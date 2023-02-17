@@ -6,7 +6,7 @@ export default function Dice(props) {
       <>
       <div className="dice">
         <p id="player"> {props.player}</p>
-        <img src={props.face} alt="dice" />   {/* we dont need () or have the function as a string*/}
+        <img src={props.face} alt="dice"/>   {/* we dont need () or have the function as a string*/}
         {/* anytime ref variable or func we will need {} in jsx return*/}
            {/*props.face same thing as concatenating like before*/}
 
