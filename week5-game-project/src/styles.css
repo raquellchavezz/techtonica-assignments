@@ -1,0 +1,19 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .dice {
+    display: inline-block;
+  }
+  
+  #diceRollButton {
+    font-family: "Courier New", Courier, monospace;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+  
