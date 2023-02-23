@@ -76,4 +76,4 @@ const BOOKS = [{
     "format": "Paperback"
 }
 ]
-module.exports = BOOKS;
+module.exports = BOOKS; // exports the books data 
