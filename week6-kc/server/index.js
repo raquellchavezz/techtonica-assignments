@@ -1,3 +1,8 @@
+//NOTE: I will be using port 5002 instead of 8080 since 8080 is already in use due to another project I was working on 
+// Also, this assignement is in my techtonica-assignements repo in github instead of my techtonica-knowledge-checks. 
+//I know we were supposed to do this assignment in the knowlege check repo and create a new branch however I did not have time to fix this today 
+// so it will be in my techtonica-assignments repo under the branch "week6-knowledge-check"
+
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -12,7 +17,10 @@ const jsonParser = bodyParser.json();
 // Telling express - there is another folder that you need to find 
 app.use(express.static("../client"));
 
+// __dirname is an environment variable that tells you the absolute path of the directory containing the currently executing file.
+//source: https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname
 
+//first get request: `localhost:8080` should take users to index.html, in this case I am using port 5002 becasue 8080 is being used for another project 
 app.get('/', (req, res) =>{
     //res.json("Hello this will be a single page");
     res.sendFile(path.join(__dirname, "../client/index.html"));
@@ -21,6 +29,11 @@ app.get('/', (req, res) =>{
 app.get('/about', (req, res) =>{
     //res.json("Hello this will be a single page");
     res.sendFile(path.join(__dirname, "../client/about.html"));
+});
+
+app.get('/contactme', (req, res) =>{
+    //res.json("Hello this will be a single page");
+    res.sendFile(path.join(__dirname, "../client/contactme.html"));
 });
 
 app.use((req, res) =>{
