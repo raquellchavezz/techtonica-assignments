@@ -65,7 +65,7 @@ app.delete("/api/books/:bookISBN", cors(), async (req, res) => {
          let deletedBookTitle = books[i].title;
           console.log(books.splice(i,1)); // so here we are deleting the isbn that matches at postion i and just deleting that 1 element
          
-          return res.json(deletedBookTitle); //
+          return res.json("You deleted: " + deletedBookTitle); //
       }
     } //response for match below:
     res.sendStatus(404);
