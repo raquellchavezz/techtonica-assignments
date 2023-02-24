@@ -58,7 +58,7 @@ app.delete("/api/books/:bookISBN", cors(), async (req, res) => {
     console.log('isbnToDelete', isbnToDelete); //2 is the requested book which is being placed in URL in spot of book id but it doesn't exist which is why it is not found 404 error
     //Is the response
   
-    for (let i = 0; i <books.length; i++) {
+    for (let i = 0; i <books.length; i++) { // will use for loop to iterate through the books array
       //for every book n the array of object called books --> books.js
       // we want to check to see if the deletedBook request matches an isbn in books
       if (isbnToDelete === books[i].isbn) {
