@@ -53,7 +53,23 @@ app.post("/api/books", cors(), async (req, res) => {
   res.sendStatus(200);
 });
 // //using two diff http methods so this would not interfere with the previous get request
-
+app.delete("/api/books/:bookISBN", cors(), async (req, res) => {
+    let isbnToDelete = req.params.bookISBN; // :bookID is like a varaible/placeholder for what is being requested
+    console.log('isbnToDelete', isbnToDelete); //2 is the requested book which is being placed in URL in spot of book id but it doesn't exist which is why it is not found 404 error
+    //Is the response
+  
+    for (let i = 0; i <books.length; i++) {
+      //for every book n the array of object called books --> books.js
+      // we want to check to see if the deletedBook request matches an isbn in books
+      if (isbnToDelete === books[i].isbn) {
+         let deletedBookTitle = books[i].title;
+          console.log(books.splice(i,1)); // so here we are deleting the isbn that matches at postion i and just deleting that 1 element
+         
+          return res.json(deletedBookTitle); //
+      }
+    } //response for match below:
+    res.sendStatus(404);
+  });
 
 const PORT = 5000; //port server will be listening on, typically 4 digit num and possibly range
 
