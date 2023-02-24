@@ -18,7 +18,7 @@ app.get('/', (req, res) =>{
     res.sendFile(path.join(__dirname, "../client/index.html"));
 });
 
-app.get('/aboutme', (req, res) =>{
+app.get('/about', (req, res) =>{
     //res.json("Hello this will be a single page");
     res.sendFile(path.join(__dirname, "../client/about.html"));
 });
