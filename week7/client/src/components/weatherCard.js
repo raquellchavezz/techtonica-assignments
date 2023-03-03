@@ -1,4 +1,4 @@
-// import moment from 'moment-timezone'; 
+
 
 
 const WeatherCard = (props) => {
@@ -29,12 +29,12 @@ const WeatherCard = (props) => {
             </p>
             <p>
               Sunrise: <span className="data">
-                {props.data.sys.sunrise}
+                {props.sunrise}
               </span>
             </p>
             <p>
               Sunset: <span className="data">
-              {props.data.sys.sunset}
+              {props.sunset}
                 {/* {props.moment(sunsetTime).format()} */}
               {/* thinking something like this: */}
             {/* {props.moment.tz(weather.data.sunset *1000, timezone).format('HH:mm')} */}
