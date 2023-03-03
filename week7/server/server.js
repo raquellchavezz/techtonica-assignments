@@ -54,6 +54,11 @@ app.get('/api/weather', (req, res) => { // req = request, res = response --> its
   //result = response in json format
 });
 
+
+
+
+
+
 // console.log that your server is up and running
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);

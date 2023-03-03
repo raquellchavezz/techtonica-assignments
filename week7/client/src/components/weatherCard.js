@@ -12,7 +12,8 @@ const WeatherCard = (props) => {
                 {props.data.weather[0].description}
               </span>
             </p>
-            <img src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@4x.png`} alt={"Icon from Open Weather Api"}/>
+            <img src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@4x.png`} alt={"Icon from Open Weather Api"}/> 
+            {/* have to access the index */}
             <p>
               Temperature: <span className="data">
                 {props.data.main.temp} <sup>o</sup>F
@@ -21,6 +22,11 @@ const WeatherCard = (props) => {
             <p>
               Feels Like: <span className="data">
                 {props.data.main.feels_like} <sup>o</sup>F
+              </span>
+            </p>
+            <p>
+              Sunrise: <span className="data">
+                {props.data.sys.sunrise}
               </span>
             </p>
 
