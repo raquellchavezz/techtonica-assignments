@@ -13,9 +13,12 @@ form{
 margin-left: 150px;
 }
 
-.no-outline:focus {
+.no-outline {
   border-radius: 19px;
-  
+  outline: none;
+  color: #E38150;
+
+
 
 }
 
@@ -31,5 +34,5 @@ margin-left: 150px;
    color: #9fcad8; 
  }
 .data{
-  color: rgb(218, 146, 99)
+  color: #fcac89;
 }
