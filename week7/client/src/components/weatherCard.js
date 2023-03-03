@@ -29,6 +29,11 @@ const WeatherCard = (props) => {
                 {props.data.sys.sunrise}
               </span>
             </p>
+            <p>
+              Sunset: <span className="data">
+                {props.data.sys.sunset}
+              </span>
+            </p>
 
             </div>
 
