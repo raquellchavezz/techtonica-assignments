@@ -42,6 +42,7 @@ app.get('/api/weather', (req, res) => { // req = request, res = response --> its
   console.log(url)
   //chaining diff func calls, callback bs all have own func calls inside
   fetch(url) //fetch func will return a response based on whatevr data u sent it (url get req)
+  //calling .then on the promise
   .then((response) => response.json()) //response sends back saying ok weather api give me weather for x city, response will be weather for x city need as json so browser can understand 
   .then((result) => { //can also name result data
     console.log("Success:", result);

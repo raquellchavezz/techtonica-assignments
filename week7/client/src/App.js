@@ -17,13 +17,11 @@ function App() {
     //something to manage (onChange) the data 
     //what do we do when someone submits the form 
 //api for weather map is diff from the route we defined for backend server, backend calling out to weather map api
-
-
     .then((response) => response.json())
     .then((result) => {
         console.log(result)
         // setCity(result.weather[0].name);
-        setResult(result);
+        setResult(result); //setting the data we got bacak from weather map api and saving into our state varaibale called result
       });
   }
 
@@ -37,7 +35,7 @@ function App() {
     <div className="App">
       {/* now we need to connect to the weather form */}
       <WeatherForm setCity={setCity} handleSubmit={handleSubmit}/>
-      {/* {!result ? <p>Please click the button to see Data</p> : <WeatherCard data={result} /> } */}
+      {!result ? <p>Please click the button to see Data</p> : <WeatherCard data={result} /> }
     </div>
   );
 }
