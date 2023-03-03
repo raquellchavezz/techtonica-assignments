@@ -7,7 +7,7 @@ const onChange = (e) => { //anytime type into text box
 
     return (
         <div className="weather">
-        <h1 className="App-header">Techtonica Weather Forecast App </h1>
+        <h1 className="App-header">Techtonica Weather Forecast App  ⛅ </h1>
         <form onSubmit={props.handleSubmit}>
           <input
             id="city-name"
