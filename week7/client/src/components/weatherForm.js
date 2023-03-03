@@ -1,5 +1,9 @@
 const WeatherForm = (props) =>{
-
+const onChange = (e) => { //anytime type into text box
+  //onchnage has access to event we are performing change on
+  console.log(e.target.value) //event is the input elem, gives target of event which is the input elem
+  props.setCity(e.target.value)
+}
 
     return (
         <div className="weather">
@@ -10,8 +14,7 @@ const WeatherForm = (props) =>{
             type="text"
             placeholder="Please enter the city name"
             name="city"
-            value={props.city}
-            readOnly
+            onChange= {onChange} //when there's a change made to the form when user submits
           />
           <input type="submit" value="Submit" />
         </form>
