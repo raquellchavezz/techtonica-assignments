@@ -3,9 +3,12 @@ import { useState } from "react";
 import WeatherForm from './components/weatherForm';
 import WeatherCard from './components/weatherCard';
 
+ 
+
 function App() {
   const [city, setCity] = useState(""); //need to keep track of city
   const [result, setResult] = useState(null); //what api sends us will be result
+  const [sunrise, setSunrise] = useState(""); 
 
   //A function to do the get request and set the state from the hard code data
   const loadCity = () => { //will get called later below
@@ -18,6 +21,7 @@ function App() {
     //what do we do when someone submits the form 
 //api for weather map is diff from the route we defined for backend server, backend calling out to weather map api
     .then((response) => response.json())
+    // .then((sundata) => {moments(`0${data.sys.sunrise.hour}:${data.sys.sunrise.minute}am`,"hh:mm:a")})
     .then((result) => {
         console.log(result)
         // setCity(result.weather[0].name);
@@ -35,6 +39,7 @@ function App() {
     <div className="App">
       {/* now we need to connect to the weather form */}
       <WeatherForm setCity={setCity} handleSubmit={handleSubmit}/>
+
       {!result ? <p>Please click the button to see Data</p> : <WeatherCard data={result} /> }
     </div>
   );

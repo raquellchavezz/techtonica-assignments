@@ -18,10 +18,11 @@ margin-left: 150px;
   /* text-align: center; */
   margin: auto;
   padding-left: 20px;
+
  }
  .App-header{
-   color:blue
+   color: #9fcad8; 
  }
 .data{
-  color: purple
+  color: rgb(216, 142, 213)
 }

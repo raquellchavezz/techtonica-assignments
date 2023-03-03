@@ -1,5 +1,8 @@
-const WeatherCard = (props) => {
+import moment from 'moment-timezone'; 
 
+
+const WeatherCard = (props) => {
+  const moment = require('moment');
 
     return (
         <div className="weather-card">
@@ -31,7 +34,17 @@ const WeatherCard = (props) => {
             </p>
             <p>
               Sunset: <span className="data">
-                {props.data.sys.sunset}
+              {props.data.sys.sunset}
+                {/* {props.moment(sunsetTime).format()} */}
+              {/* thinking something like this: */}
+            {/* {props.moment.tz(weather.data.sunset *1000, timezone).format('HH:mm')} */}
+              
+              </span>
+            </p>
+
+            <p>
+              Humidity: <span className="data">
+                {props.data.main.humidity}
               </span>
             </p>
 
