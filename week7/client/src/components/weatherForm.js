@@ -16,7 +16,7 @@ const onChange = (e) => { //anytime type into text box
             name="city"
             onChange= {onChange} //when there's a change made to the form when user submits
           />
-          <input id = "button" type="submit" value="Submit" />
+          <input type="submit" class="no-outline" value="Submit" />
         </form>
       </div>
     )

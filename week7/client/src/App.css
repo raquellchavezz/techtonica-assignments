@@ -13,6 +13,11 @@ form{
 margin-left: 150px;
 }
 
+.no-outline:focus {
+  border-radius: 19px;
+  
+
+}
 
 .App {
   /* text-align: center; */
