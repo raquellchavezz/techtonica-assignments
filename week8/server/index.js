@@ -22,21 +22,31 @@ app.get("/", (req, res) => {
   });
 
 // Make the GET request for the GAME Api for grabbing all the questions 
+// app.get('/api/game', (req, res) =>{ //local host 3000 will always show your react
+//   const url = 'https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean'; // in the back end maiking the reques- 
+//   fetch(url) //this will fetch the url to the game that we want to render to the user from the game API TRIVIA
+//   .then((response) => response.json()) // we are then going to take that response convert it to JSON format
+//   .then((result) => {  //take the result of that response
+//     console.log("Sucess: ", result); // console.log for us to see if result is working 
+//     res.send(result); //then we want to send this result to the front end 
+//   })
+// .catch((error) => { //catching any errors 
+//   console.log("Error: ", error); 
+// }); 
+// }); 
 
+//we can also do the fetch request this way with an async function (does the same thing just can help differentiate front end fetch vs backend fetch)
 
-  // //hardcode the game response for testing reasons to don't saturate my API call. 
-app.get('/api/game', (req, res) =>{ //local host 3000 will always show your react
-  const url = 'https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean'; // in the back end maiking the reques- 
-  fetch(url) //this will fetch the url to the game that we want to render to the user from the game API TRIVIA
-  .then((response) => response.json())
-  .then((result) => { 
-    console.log("Sucess: ", result); 
-    res.send(result);
-  })
-.catch((error) => { 
-  console.log("Error: ", error); 
-}); 
-}); 
+app.get ('/api/game', async(req, res)=>{ 
+  const URL = 'https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean';
+  try{ 
+    const apiRequest = await fetch(URL); 
+    const questions = await apiRequest.json();
+    res.send(questions)
+  }catch(err){
+    console.log(err);
+  }
+})
 //change path in my request from the backend 
 
 

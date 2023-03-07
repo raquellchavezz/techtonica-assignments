@@ -6,7 +6,7 @@ import QuestionCard from "./questioncard";
 //}
 const Game = (props) => {
 
-    const [questions, setQuestions] = useState([]);
+    const [questions, setQuestions] = useState([]); //state for the questions 
 
     const loadData = () => {
         fetch('http://localhost:5000/api/game')
@@ -28,7 +28,7 @@ const Game = (props) => {
             <div className='question-count'>
                 <span>Question 1</span>/{questions.length}
             </div>
-            {questions.map((question, index) => {
+            {questions.map((question, index) => { //mapping all anwers and passing it one at a time 
                 return <QuestionCard key={index} question={question} />
             })}
         </div>
