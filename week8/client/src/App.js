@@ -6,6 +6,9 @@ import { useState } from "react";
 
 function App() {
   const [user, setUser] = useState("");
+  //function handleUser(text){ 
+  //   setUser(text)
+  // }
   const handleUser = (text) =>{
     setUser(text);
   }
@@ -14,7 +17,8 @@ function App() {
     <div className="App">
     <Header user={user} />
     <UserForm grabUser={handleUser} />
-    {user ? <Game /> : null}
+    {user ? <Game /> : null} 
+    {/* if user then we will show game other wise if user empty we do nothing*/}
       
     </div>
   );

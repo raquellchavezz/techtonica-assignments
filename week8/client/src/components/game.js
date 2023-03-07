@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import QuestionCard from "./questioncard";
 
+//function game (props){ 
+
+//}
 const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
@@ -14,9 +17,11 @@ const Game = (props) => {
             })
     }
 
-    useEffect(() => {
-        loadData();
-    }, [])
+    useEffect(
+        () => { //runs whenever array changes, like side effect
+        loadData(); //21 -23 first param, this func figures out what our questions are 
+    }
+    , []) // second param 
 
     return (
         <div className="Container">
