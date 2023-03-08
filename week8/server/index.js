@@ -4,7 +4,8 @@ import cors from 'cors';
 import fetch from 'node-fetch';
 
 // For testing my API I saving one response in a .js file 
-import fakedata  from './fakedata.js';
+// import fakedata  from './fakedata.js';
+//index.js is my backend server
 
 const app = express();
 const PORT = 5000;
@@ -42,7 +43,7 @@ app.get ('/api/game', async(req, res)=>{
   try{ 
     const apiRequest = await fetch(URL); 
     const questions = await apiRequest.json();
-    res.send(questions)
+    res.send(questions) // no {}
   }catch(err){
     console.log(err);
   }
