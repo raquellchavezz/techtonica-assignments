@@ -8,6 +8,8 @@ import QuestionCard from "./questioncard"; //game.js is parent of this
 const Game = (props) => {
 
     const [questions, setQuestions] = useState([]); //state for the questions 
+    
+
 
     const loadData = () => {
         fetch('http://localhost:5000/api/game')
@@ -31,9 +33,10 @@ const Game = (props) => {
             </div>
             {questions.map((question, index) => { //mapping all anwers and passing it one at a time 
                 return <QuestionCard key={index} question={question} /> //question card is per question
-            })}
+            })} 
+            {/*checkAnswer = {checkAnswer}*/}
             <div> 
-                score : 8/10 
+               {/* <Score/> */}
                
             </div>
         </div>
