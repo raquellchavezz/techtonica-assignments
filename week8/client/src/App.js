@@ -25,7 +25,7 @@ function App() {
       <Header user={user} />
       <UserForm grabUser={handleUser} />
       {user ? <Game /> : null}
-      {/*checkAnswer={checkAnswer}  */}
+
       {/* if user then we will show game other wise if user empty we do nothing*/}
 
     </div>
