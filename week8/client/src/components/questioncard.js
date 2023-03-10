@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Score from "./scoreBoard";
+import { decode } from "html-entities"; 
+
 const QuestionCard = (props) => {
   const [answered, setAnswered] = useState("false");
   // const [score, setScore] = useState(0);
@@ -42,7 +44,7 @@ const QuestionCard = (props) => {
 
   return (
     <div className={"question-section"}>
-      <div className="question-text">{props.question.question}</div>
+      <div className="question-text">{decode(props.question.question)}</div>
       {/* passing data for the question in as props*/}
       <div className="answer-section">
         <button value="True" onClick={checkAnswer}>
