@@ -31,14 +31,13 @@ const Game = (props) => {
         () => { //runs whenever array changes, like side effect
         loadData(); //21 -23 first param, this func figures out what our questions are 
     }
-    , []) // second param 
+    , []) // second param '
+
+
 
     return ( //can return scoreboard here
         <div className="Container">
-            <div> 
-        
-               <Score score={score}/>      {/* passing the prop into score */}
-            </div>
+      
             <div className='question-count'>
                 {/* <span>Question 1</span>/{questions.length} */}
             </div>
@@ -47,6 +46,10 @@ const Game = (props) => {
             })} 
             {/*checkAnswer = {checkAnswer}*/}
             {/* giving child access to state thats in out parent, prop that holds my callback func setScore */}
+            <div> 
+        
+        <Score score={score}/>      {/* passing the prop into score */}
+     </div>
         </div>
     )
     // return <QuestionCard key={index} question={question} score={score} setScore={setScore} /> //question card is per question

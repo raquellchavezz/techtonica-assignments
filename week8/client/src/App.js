@@ -8,7 +8,6 @@ function App() {
   const [user, setUser] = useState(""); //state to set the user
   // const [score, setScore] = useState(0); //state to set the score
   //state that would hold result of child
-  const [result, setResult] = useState(""); //state to set the result
 
   //event = all info about form being pressed
   
