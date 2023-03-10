@@ -37,18 +37,19 @@ const Game = (props) => {
         <div className="Container">
             <div> 
         
-               <Score score={score}/>      {/* passing the prop */}
+               <Score score={score}/>      {/* passing the prop into score */}
             </div>
             <div className='question-count'>
                 <span>Question 1</span>/{questions.length}
             </div>
             {questions.map((question, index) => { //mapping all anwers and passing it one at a time 
                 return <QuestionCard key={index} question={question} score={score} setScore={setScore}  /> //question card is per question
-            })} //giving child access to state thats in out parent
+            })} 
             {/*checkAnswer = {checkAnswer}*/}
-            
+            {/* giving child access to state thats in out parent, prop that holds my callback func setScore */}
         </div>
     )
+    // return <QuestionCard key={index} question={question} score={score} setScore={setScore} /> //question card is per question
 
 }
 

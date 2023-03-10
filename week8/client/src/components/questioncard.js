@@ -22,10 +22,13 @@ const QuestionCard = (props) => {
         correctAnswer
       );
       props.setScore(props.score +1)
+      //props being passed back up to parent
       //only way for react to keep track of updated score is thru function setScore 
       //game card has state called score and we are passing it as a prop here 
       // props.passingScore(score);
       //pass down score and passScore
+
+  //"props. send it up to the pops" -Ruthie
     } else {
       //not doing anything with the score in the else, score won't be affected here
       console.log(
