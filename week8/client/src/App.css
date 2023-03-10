@@ -16,13 +16,22 @@
 }
 
 .question-count{
-  margin-top: 25px;
+  margin-top: 25px; 
 }
 
 .Container {
   display: table-cell;
   vertical-align: middle;
   align-self: center;
+}
+.scoreBoard{ 
+  color:rgb(65, 27, 213);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border:10px solid rgb(192, 174, 248);
+  margin-right: 2px;
+  padding-left: 5px;
+
+ 
 }
 
 .question-section{
