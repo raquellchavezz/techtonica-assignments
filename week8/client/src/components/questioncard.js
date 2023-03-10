@@ -42,6 +42,8 @@ const QuestionCard = (props) => {
   }; //pass result of func back up to parent and store that result as state in parent then pass as props to other the sibling that need to display
   // call the function automatically gets the return
 
+
+  
   return (
     <div className={"question-section"}>
       <div className="question-text">{decode(props.question.question)}</div>
