@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import QuestionCard from "./questioncard"; //game.js is parent of this
+import Score from "./scoreBoard";
 //want to keep score in game 
 
 //function game (props){ 
@@ -8,8 +9,13 @@ import QuestionCard from "./questioncard"; //game.js is parent of this
 const Game = (props) => {
 
     const [questions, setQuestions] = useState([]); //state for the questions 
+    const [score, setScore] = useState(0); //moved state here because this is where we are handling the state
     
+    // const passScore = (score) => { //using a callback function 
+    //     setScore(score); //calling the function 
+    //     console.log(score)
 
+    // }
 
     const loadData = () => {
         fetch('http://localhost:5000/api/game')
@@ -19,6 +25,7 @@ const Game = (props) => {
                 setQuestions(data.results);
             })
     }
+    
 
     useEffect( //function takes 2 params 1) thing load data which will render each time data change 2) empty array bc second param should be param of your state
         () => { //runs whenever array changes, like side effect
@@ -28,17 +35,18 @@ const Game = (props) => {
 
     return ( //can return scoreboard here
         <div className="Container">
+            <div> 
+        
+               <Score score={score}/>      {/* passing the prop */}
+            </div>
             <div className='question-count'>
                 <span>Question 1</span>/{questions.length}
             </div>
             {questions.map((question, index) => { //mapping all anwers and passing it one at a time 
-                return <QuestionCard key={index} question={question} /> //question card is per question
-            })} 
+                return <QuestionCard key={index} question={question} score={score} setScore={setScore}  /> //question card is per question
+            })} //giving child access to state thats in out parent
             {/*checkAnswer = {checkAnswer}*/}
-            <div> 
-               {/* <Score/> */}
-               
-            </div>
+            
         </div>
     )
 

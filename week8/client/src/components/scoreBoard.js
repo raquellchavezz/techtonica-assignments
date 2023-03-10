@@ -1,18 +1,10 @@
-import React, { useState } from "react";
-import QuestionCard from "./questioncard";
 const Score = (props) => {
-    const [score, setScore] = useState(0); 
-    
-    const updateScore = () => {
-        setCount(prevCount => prevCount +1 )
-
-    }
-
 
     return (
       <div>
-        <h3> Count is:   </h3>
-        <button onClick={updateScore}></button>
+    
+        <h3> score is: {props.score}  </h3> 
+        {/* this will render the props that we pass score */}
       </div>
     )
   }

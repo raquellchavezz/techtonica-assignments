@@ -1,33 +1,38 @@
 import { useState } from "react";
+import Score from "./scoreBoard";
 const QuestionCard = (props) => {
-  const [answered, setAnswered] = useState("false"); 
-  const [score, setScore] = useState(0); 
-  
-  const updateScore = () => {
+  const [answered, setAnswered] = useState("false");
+  // const [score, setScore] = useState(0);
 
-     setScore(prevCount => prevCount +1 )
-    
-         }  
+  // const updateScore = () => {
+
+  //    setScore(prevCount => prevCount +1 )
+
+  //        }
 
   const checkAnswer = (event) => {
     //lets us know what the user is clicking on true or false
-    const button = event.target.value; //gets button value
-    console.log(button);
-    if (button === props.question.correct_answer) {
+    const userAnswer = event.target.value; //gets button value
+    const correctAnswer = props.question.correct_answer;
+    console.log(userAnswer);
+    if (userAnswer === correctAnswer) {
       console.log(
-        `Your answer, ${button}, is correct!`,
+        `Your answer, ${userAnswer}, is correct!`,
         "answer = ",
-        props.question.correct_answer
+        correctAnswer
       );
-      return setScore(+1);
+      props.setScore(props.score +1)
+      //only way for react to keep track of updated score is thru function setScore 
+      //game card has state called score and we are passing it as a prop here 
+      // props.passingScore(score);
+      //pass down score and passScore
     } else {
+      //not doing anything with the score in the else, score won't be affected here
       console.log(
-        `Your answer, ${button}, is incorrect!`,
+        `Your answer, ${userAnswer}, is incorrect!`,
         "answer = ",
-        props.question.correct_answer
+        correctAnswer
       );
-      return setScore();
-      // props.setAnswer(false)
     }
   }; //pass result of func back up to parent and store that result as state in parent then pass as props to other the sibling that need to display
   // call the function automatically gets the return
@@ -55,3 +60,5 @@ const QuestionCard = (props) => {
 };
 
 export default QuestionCard;
+//dont want to define state with same name thinking its the same data 
+//each state should be its own unique data 
