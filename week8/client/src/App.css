@@ -1,9 +1,10 @@
 .App {
-  background-color: #bcdeae;
-  font-family: "Raleway", sans-serif;
+  background-color:#CEC8E4;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display:flex; 
   flex-direction:column; 
   justify-content:center;
+  font-size: 19px;
 }
 
 .textHeader{
@@ -26,7 +27,7 @@
 
 .question-section{
   /* Change background color */
-  background-color: white;
+  background-color:#f8f7e8;
 
   /* Add border */
   border: 1px solid #bacdd8;
