@@ -11,6 +11,19 @@
   align-self: center;
 }
 
+/* 
+input[type=text] - will only select text fields */
+.input[type="text"]:focus:hover{ 
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15;
+  border: 3px solid rgba(220, 44, 196, 0.275);
+  box-shadow: 0px 0px 5px #61C5FA;
+  outline: none;
+  
+
+}
+
 .ListMain{
   align-self: center;
 }

@@ -3,7 +3,7 @@ import Score from "./scoreBoard";
 import { decode } from "html-entities";
 
 const QuestionCard = (props) => {
-  const [answered, setAnswered] = useState(false);
+  const [answered, setAnswered] = useState(false); //cannot be in string
   const checkAnswer = (event) => {
     //lets us know what the user is clicking on true or false
     const userAnswer = event.target.value; //gets button value
@@ -40,12 +40,13 @@ const QuestionCard = (props) => {
       <div className="question-text">{decode(props.question.question)}</div>
       {/* passing data for the question in as props*/}
       <div className="answer-section">
+      
         <button value="True" disabled= {answered} onClick={checkAnswer} >
           True
         </button>
         {/*pass as prop */}
         {/* can have an onclick then pass in a function that will check if answer is correct */}
-        <button value="False" disabled= {answered} onClick={checkAnswer}>
+        <button value="False" disabled= {answered} onClick={checkAnswer}> {/*when user clicks, call the function checkAnswer*/}
           {" "}
           {/*calling func checkAnswer*/}
           False
