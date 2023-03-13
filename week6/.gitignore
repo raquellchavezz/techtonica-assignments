@@ -1,0 +1,5 @@
+// files we dont want git to track 
+.DS_Store
+node_modules
+./node_modules
+/node_modules  
